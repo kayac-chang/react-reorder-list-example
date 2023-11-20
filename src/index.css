@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply flex justify-center items-center;
+  @apply w-screen h-screen;
+  @apply bg-orange-300;
+  @apply overflow-hidden;
+}
+
+[data-reorder] {
+  @apply h-[30rem] w-80;
+  @apply space-y-2;
+}
+
+[data-reorder-item] {
+  @apply h-10 w-full;
+  @apply bg-white;
+  @apply rounded;
+  @apply flex items-center;
+  @apply p-4;
+  @apply cursor-grab select-none;
+}
